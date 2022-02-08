@@ -9,9 +9,10 @@ import java.util.UUID;
 @Data
 @Builder
 public class User {
-  private UUID uuid;
+  private UUID userId;
   private String username;
-  private Time lastPollTime;
+  private Time lastSyncTime;
+  private String messagePhrase;
 
   public static UserBuilder builder() {
     return new UserBuilder();
